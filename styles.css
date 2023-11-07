@@ -33,7 +33,7 @@ h2{
 a{
     color: rgb(98, 135, 175, .5);
 
-    cursor: url("../images/star2.png"), auto;
+    cursor: url("/star2.png"), auto;
 }
 a:visited{
     color: #D2A2F8;
@@ -196,7 +196,7 @@ Skills */
 /* Page 2 "Cats" */
 @font-face {
     font-family: catFont;
-    src: url(../fonts/catFont.ttf);
+    src: url(catFont.ttf);
 }
 .catFont{
     font-family: 'catFont';
@@ -244,7 +244,7 @@ Skills */
 /* Page 3 "Rest"*/
 @font-face {
     font-family: EBGaramond;
-    src: url(../fonts/EBGaramond.ttf);
+    src: url(EBGaramond.ttf);
 }
 .restH1{
     font-family: EBGaramond;
