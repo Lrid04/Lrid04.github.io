@@ -1,0 +1,459 @@
+/* Color Codes
+#F8F0E5 - creme
+#EADBC8 - tan
+#DAC0A3 - dark tan
+#0F2C59 - navy blue
+#6287AF - light navy blue
+*/
+
+/*-----------------------------------------------
+Global Styles */
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background-image: linear-gradient(rgb(00, 00, 00, .4), rgb(00, 00, 00, .8));
+    color: #0F2C59;
+    font-family: 'Playfair Display', serif;
+    line-height: 150%;
+}
+h1{
+    color: #0f2d59b7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    margin: 10px;
+}
+h2{
+    color: #0f2d59b7;
+    font-style: bold;
+}
+a{
+    color: rgb(98, 135, 175, .5);
+
+    cursor: url("../images/star2.png"), auto;
+}
+a:visited{
+    color: #D2A2F8;
+}
+a:hover{
+    color:rgb(98, 135, 175);
+    text-decoration: none;
+}
+a:active{
+    text-decoration: line-through;
+}
+section h2{
+    text-decoration: 2px underline #0F2C59;
+}
+section{
+    padding: 40px 10px;
+}
+.wrapper{
+    margin: 5%;
+    border: 20px groove #6287AF;
+    position: relative;
+}
+
+/*---------------------------------------------------
+ Header & Footer */
+header{
+    background-image: linear-gradient(rgb(248, 240, 229) 90%, rgb(234, 219, 200));
+    background-color: #F8F0E5;
+    padding: 20px 10px;
+    position: relative;
+}
+footer{
+    background-color: #F8F0E5;
+    padding: 5px 10px;
+}
+footer p{
+    text-align: right;
+}
+.socials{
+    float: left;
+}
+.socials a{
+    padding: 5px;
+    margin: 10px;
+}
+.head_shot{
+    z-index: 2;
+    height:25%;
+    width:25%;
+    margin: 5px;
+    animation-play-state: running;
+}
+.head_shot:hover{
+    animation-name: shift;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.info{
+    text-align: center;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+.copyright::before{
+    content: "\00A9"
+}
+.info h1{
+    line-height: 100%;
+}
+.comet{
+    z-index: 2;
+    animation-name: flyBy;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-iteration-count: 3;
+    margin: -10%;
+    height: 40%;
+    width: 40%;
+}
+
+/* ---------------------------------------------
+Nav */
+
+nav {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    border: 5px groove #6287AF;
+    z-index: 1;
+  }
+  nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .btn{
+    color: 	rgb(255, 0, 0, .5);
+  }
+  .btn:visited{
+    color: 	rgb(255, 0, 0, .5);
+  }
+  .btn:hover{
+    color: rgb(255, 0, 0)
+  }
+/* ---------------------------------------------
+Work Experience */
+.work{
+    background-image: linear-gradient(rgb(234, 219, 200) 90%, rgb(218, 192, 163));
+    /* background-color: #EADBC8; */
+}
+.company{
+    font-size: 1.25em;
+}
+.date{
+    font-size: 1.15em;
+    font-style:italic;
+}
+.work h2{
+    font-weight: bolder;
+}
+
+/* --------------------------------------------------
+Education */
+.education{
+    background-image: linear-gradient(rgb(218, 192, 163) 90%, rgb(234, 219, 200));
+}
+.education h2{
+    font-weight: bolder;
+}
+.points::before{
+    content: "\2606"
+}
+
+/* --------------------------------------------------
+Skills */
+.skills{
+    background-image: linear-gradient(rgb(234, 219, 200) 90%, rgb(248, 240, 229));
+    /* background-color: #EADBC8; */
+}
+.skills p{
+    font-weight: bolder;
+}
+
+
+
+/* Page 2 "Cats" */
+@font-face {
+    font-family: catFont;
+    src: url(../fonts/catFont.ttf);
+}
+.catFont{
+    font-family: 'catFont';
+    font-size: 3em;
+    text-align: center;
+}
+.Cats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #EADBC8;
+}
+.Col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.catPic{
+    height: 280px;
+    width: 560x;
+    margin: 10px;
+    border: #0F2C59 solid 5px;
+}
+.catHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.headingCat{
+    height: 15%;
+    width: 15%;
+}
+.pawPrint{
+    height: 4%;
+    width: 4%;
+}
+
+/* Page 3 "Rest"*/
+@font-face {
+    font-family: EBGaramond;
+    src: url(../fonts/EBGaramond.ttf);
+}
+.restH1{
+    font-family: EBGaramond;
+    font-size: 3em;
+    text-align: center;
+}
+.restContent{
+    background-color: #EADBC8;
+}
+.benches{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Media Queries */
+@media (max-width: 900px){
+    h1{
+        font-size: 3em;
+    }
+    .catHeader{
+        height: 80%;
+        width: 80%;
+        font-size: 55%;
+    }
+    .catPic{
+        height: 175px;
+        width: 350px;
+    }
+    .bench{
+        height: 50%;
+        width: 50%;
+    }
+    .restH1{
+        line-height: 150%;
+    }
+    h2{
+        font-size: 1.25em;
+    }
+    p{
+        font-size: .75em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .date{
+        font-size: 1.05em;
+    }
+    .company{
+        font-size: 1.1em;
+    }
+    nav a {
+        padding: 15px 20px;
+        font-size: 1em;
+      }
+    }
+    
+    @media (max-width: 750px){
+        .wrapper{
+            margin: 5%;
+            border: 15px groove #6287AF;
+            position: relative;
+        }
+        .header-container{
+            flex-direction: column;
+            line-height: 100%;
+        }
+        .head_shot{
+            margin: 3px;
+        }
+        h1{
+            font-size: 2.75em;
+        }
+        .catHeader{
+            height: 75%;
+            width: 75%;
+            font-size: 50%;
+            line-height: 300%;
+        }
+        .catPic{
+            height: 140px;
+            width: 280px;
+        }
+        .restH1{
+            font-size: 3em;
+        }
+        h2{
+            font-size: 1.1em;
+        }
+        p{
+            font-size: .60em;
+        }
+        nav a {
+            padding: 15px 20px;
+            font-size: .75em;
+          }
+        footer a{
+            font-size: .75em;
+        }
+        footer h2{
+            font-size: .8em;
+        }
+        footer{
+            padding: 2px 5px;
+        }
+    }
+    
+    @media (max-width: 500px){
+        .wrapper{
+            margin: 5%;
+            border: 10px groove #6287AF;
+            position: relative;
+        }
+        nav {
+            left: 10%;
+            right: 10%;
+            width: 80%;
+          }
+          nav a {
+            padding: 10px 10px;
+            font-size: .5em;
+          }
+          section{
+            padding-top: 5px;
+            padding-bottom: 8px;
+          }
+        .work{
+            padding-top: 40px;
+          }
+          h1{
+            font-size: 2.2em;
+          }
+        .catHeader{
+            height: 80%;
+            width: 80%;
+            font-size: 30%;
+            line-height: 300%;
+        }
+        .catPic{
+            margin: 5px;
+        }
+        .Cats{
+            flex-direction: column;
+        }
+        .restH1{
+            font-size: 2em;
+        }
+          .info h2{
+            font-size: .8em;
+          }
+          .info p{
+            font-size: .45em;
+          }
+          footer h2{
+            padding-left: 13px;
+          }
+          .socials{
+            margin: 5px 10px
+          }
+          .socials a{
+            margin: 5px 5px
+          }
+          footer h2{
+            margin-bottom: 0px;
+          }
+          .copyright{
+            margin-right: 5px;
+          }
+    }
+    
+    @media (max-width: 400px){
+        nav a {
+            padding: 8px 8px;
+            font-size: .45em;
+          }
+        .info p{
+            font-size: .4em;
+        }
+        .catPic{
+            height: 120px;
+            width: 240px;
+        }
+        .restH1{
+            font-size: 1.5em;
+        }
+    }
+    
+    /* Animations */
+    @keyframes flyBy{
+        0% {
+            left: -20;
+            transform: translateX(-100%)
+            rotate(-20deg);
+          }
+          100% {
+            left: 140%;
+            top: 40px;
+            transform: translateX(350%)
+            rotate(10deg);
+            margin: -30%;
+          }
+    }
+    @keyframes shift{
+        0%, 100%{
+            scale: 1;
+        }
+        50%{
+            transform: translateX(-10px);
+            scale: .8;
+        }
+    }
